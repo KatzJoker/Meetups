@@ -1,0 +1,18 @@
+{
+  "name": "online-meetup-app",
+  "version": "1.0.0",
+  "description": "online-meetingup-app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Katsuyuki Sakai",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
