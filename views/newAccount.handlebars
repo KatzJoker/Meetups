@@ -1,0 +1,30 @@
+<h3>Register your Account</h3>
+<div class="row">
+    <div class="col-sm-4">
+        {{#each errors}}
+        <div class="alert alert-danger">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            {{test}}
+        </div>
+        {{/each}}
+        <form action="/signup" method="POST">
+            <div class="form-group mt-3">
+                    <label for="username">Full Name</label>
+                    <input type="text" name="username" id="username" value="{{fullname}}" class="form-control" required>
+            </div>
+            <div class="form-group mt-3">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="{{email}}" class="form-control">
+            </div>
+            <div class="form-group mt-3">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" value="{{password}}" class="form-control" required>
+            </div>
+            <div class="form-group mt-3">
+                <label for="password2">Password Confirmation</label>
+                <input type="password" name="password2" id="password2" value="{{password2}}" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg rounded-pill mt-3">Create <i class="fas fa-plus"></i></button>
+        </form>
+    </div>
+</div>
